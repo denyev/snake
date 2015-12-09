@@ -3,12 +3,13 @@ using System.Collections.Generic;
 
 namespace snake
 {
-	public class HorizontalLine : Figure
+	public class VerticalLine : Figure
 	{
-		public HorizontalLine (int xLeft, int xRight, int y, char sym)
+		public VerticalLine(int y1, int y2, int x, char sym)
 		{
+
 			pList = new List<Point>();
-			for (int x = xLeft; x <= xRight; x++) {
+			for (int y = y1; y <= y2; y++) {
 				Point p = new Point (x, y, sym);
 				pList.Add (p);
 			}

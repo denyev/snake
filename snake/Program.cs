@@ -16,6 +16,9 @@ namespace snake
 			HorizontalLine line = new HorizontalLine (5, 10, 8, '+');
 			line.pDraw ();
 
+			VerticalLine vline = new VerticalLine (10, 15, 20, '!');
+			vline.pDraw ();
+
 			Console.ReadLine ();
 		}
 	}
